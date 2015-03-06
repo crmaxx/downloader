@@ -20,6 +20,7 @@ object Main extends App {
     val byteArray = Stream.continually(in.read).takeWhile(_ != -1).map(_.toByte).toArray
 
     out.write(byteArray)
+    out.fluch()
     out.close()
     in.close()
 
